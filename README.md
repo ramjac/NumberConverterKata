@@ -30,5 +30,3 @@ Example:
 
 There are `14` test-cases already provided, the first `13` skipped and will not be run. Introduce each test case one by one as each one passes.
 
-
-
