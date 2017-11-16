@@ -22,7 +22,7 @@ test('multiples of ten (10, 50, 90)', () => {
   expect(toWords(90)).toBe('ninety');
 });
 
-test.skip('not multiples of ten (21-99)', () => {
+test('not multiples of ten (21-99)', () => {
   expect(toWords(21)).toBe('twenty-one');
   expect(toWords(55)).toBe('fifty-five');
   expect(toWords(99)).toBe('ninety-nine');
