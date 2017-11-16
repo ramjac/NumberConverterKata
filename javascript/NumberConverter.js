@@ -2,8 +2,11 @@
 //- Use this to learn TDD
 
 const toWords = (number) => {
-if(number < 10){
+  if(number < 10){
     return singleDigits(number);
+  }
+  if(number%100 === 0) {
+    return hundreds(number);
   }
   if(number%10 === 0) {
     return tens(number);
@@ -12,7 +15,13 @@ if(number < 10){
     return doubleDigits(number);
   }
 
+
   return mixedNumber(number);
+}
+
+const hundreds = (number) => {
+  let upper = singleDigits(number / 100);
+  return upper + ' hundred';
 }
 
 const mixedNumber = (number) => {

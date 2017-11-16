@@ -28,7 +28,7 @@ test('not multiples of ten (21-99)', () => {
   expect(toWords(99)).toBe('ninety-nine');
 });
 
-test.skip('hundreds (100, 500, 900)', () => {
+test('hundreds (100, 500, 900)', () => {
   expect(toWords(100)).toBe('one hundred');
   expect(toWords(900)).toBe('nine hundred');
 });
