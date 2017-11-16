@@ -7,17 +7,17 @@ test('0', () => {
   expect(toWords(0)).toBe('zero');
 });
 
-test.skip('single digit (1 - 9)', () => {
+test('single digit (1 - 9)', () => {
   expect(toWords(1)).toBe('one');
   expect(toWords(9)).toBe('nine');
 });
 
-test.skip('double digit under twenty (10 - 19)', () => {
+test('double digit under twenty (10 - 19)', () => {
   expect(toWords(10)).toBe('ten');
   expect(toWords(19)).toBe('nineteen');
 });
 
-test.skip('multiples of ten (10, 50, 90)', () => {
+test('multiples of ten (10, 50, 90)', () => {
   expect(toWords(20)).toBe('twenty');
   expect(toWords(90)).toBe('ninety');
 });
